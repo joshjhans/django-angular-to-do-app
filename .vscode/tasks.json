@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "icon": {
+        "color": "terminal.ansiGreen",
+        "id": "symbol-event"
+      },
+      "type": "process",
+      "label": "API",
+      "command": "/bin/bash",
+      "isBuildCommand": true,
+      "isBackground": true,
+      "options": {
+        "cwd": "/django-angular-to-do-app/src/api"
+      },
+      "runOptions": {
+        "runOn": "default",
+        "instanceLimit": 1
+      },
+      "problemMatcher": []
+    },
+    {
+      "icon": {
+        "color": "terminal.ansiRed",
+        "id": "heart"
+      },
+      "type": "process",
+      "label": "UI",
+      "command": "/bin/bash",
+      "isBuildCommand": true,
+      "isBackground": true,
+      "options": {
+        "cwd": "/django-angular-to-do-app/src/ui"
+      },
+      "runOptions": {
+        "runOn": "default",
+        "instanceLimit": 1
+      },
+      "problemMatcher": []
+    }
+  ]
+}
