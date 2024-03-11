@@ -53,7 +53,7 @@ RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhisto
     && echo "$SNIPPET" >> "/home/$USERNAME/.bashrc"
 
 RUN pip install --upgrade pip
-
+RUN npm install -g @angular/cli@latest
 
 RUN mkdir -p /django-angular-to-do-app/src/api
 RUN mkdir -p /django-angular-to-do-app/src/ui

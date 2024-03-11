@@ -31,7 +31,7 @@ Open the `django-angular-to-do-app` directory with VS Code.
 
 Note that the `Dockerfile` will install the necessary Python, Node, and Java dependencies as part of the Docker image.
 
-### 3. Backend API
+### 4. Backend API
 
 The backend is located in the `./src/api` directory. It utilizes Django, Django Rest Framework, and more to serve a REST API for the to-do app.
 
@@ -74,7 +74,7 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-### 4. Frontend UI
+### 5. Frontend UI
 
 The frontend is located in the `./src/ui` directory. It utilizes Angular, TypeScript, Tailwind, OpenAPI Generator, NgRx and more to provide a simple user interface for the to-do application.
 
@@ -90,7 +90,7 @@ ng serve --open
 
 The above command will open [http://localhost:4200/](http://localhost:4200/) in a browser.
 
-### 5. Generating TypeScript Fetch Client with OpenAPI Generator
+### 6. Generating TypeScript Fetch Client with OpenAPI Generator
 
 The [`openapi-generator`](https://github.com/OpenAPITools/openapi-generator) project provides a means to generate REST API clients from an OpenAPI specification like that provided by DRF Spectacular. To re-generate the to-do app TypeScript client in the `./src/ui/src/app/clients` directory, run the following command in the UI terminal (`./src/ui`):
 
@@ -100,7 +100,7 @@ npm run make:client
 
 ## Useful Commands
 
-#### Formatting
+### Formatting
 
 ```bash
 ruff check --fix .
