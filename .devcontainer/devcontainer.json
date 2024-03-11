@@ -1,0 +1,33 @@
+{
+  "name": "django-angular-to-do-app",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+    "target": "devl"
+  },
+  "runArgs": ["--name", "django-angular-to-do-app"],
+  "customizations": {
+    "settings": {
+      "python.defaultInterpreterPath": "/opt/conda/envs/${localEnv:ENV_NAME}/bin/python"
+    },
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-vscode-remote.remote-containers",
+        "redhat.vscode-yaml",
+        "ms-toolsai.jupyter",
+        "esbenp.prettier-vscode",
+        "charliermarsh.ruff",
+        "Gruntfuggly.todo-tree",
+        "njpwerner.autodocstring",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+  "mounts": [
+    "source=django-angular-to-do-app-bash-history,target=/commandhistory,type=volume",
+    "source=${localWorkspaceFolder},target=/django-angular-to-do-app,type=bind,consistency=cached"
+  ],
+  "remoteEnv": {}
+}

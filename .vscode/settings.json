@@ -1,0 +1,76 @@
+{
+  "files.exclude": {
+    "out": true,
+    "dist": true,
+    "**/*.pyc": true,
+    ".nyc_output": true,
+    "obj": true,
+    "bin": true,
+    "**/__pycache__": true,
+    "**/node_modules": true,
+    ".vscode-test": false,
+    ".vscode test": false,
+    "**/.mypy_cache/**": true
+  },
+  "search.exclude": {
+    "out": true,
+    "dist": true,
+    "**/node_modules": true,
+    "coverage": true,
+    "languageServer*/**": true,
+    ".vscode-test": true,
+    ".vscode test": true
+  },
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    {
+      "color": "#FAA0A0",
+      "column": 99
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always",
+    "source.fixAll": "always"
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[JSON]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[YAML]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+  "git.branchRandomName.enable": true,
+  "git.branchProtection": ["main", "release/*"],
+  "git.pullBeforeCheckout": true,
+  "git.mergeEditor": true,
+  "python.languageServer": "Default",
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.extraPaths": [
+    "/home/python/.local/lib/python3.10/site-packages"
+  ]
+}

@@ -1,0 +1,1 @@
+export { TAppState } from './TAppState';
